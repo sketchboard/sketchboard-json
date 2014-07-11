@@ -3,10 +3,9 @@ Sketchboard JSON
 
 Project describes JSON document types that can be exported from https://sketchboard.me.
 
-Class Diagram JSON
-------------------
 
-### Creating Class Diagrams
+Creating Class Diagrams
+-----------------------
 
 Create Class Diagram on https://sketchboard.me. Diagram elements are identified as classes if class icon is used on Sketchboard.io.
 
@@ -29,7 +28,11 @@ fullName(): String
 #### Class element from library
 ![Class Element from Library](img/class-icon-from-library.png)
 
-All connections between in version 1 are identified as relationships.
+All connections between classes in version 1 are identified as relationships.
+
+
+Class Diagram JSON
+------------------
 
 ### Version 1 (experimental)
 
