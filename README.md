@@ -22,8 +22,6 @@ All connections between in version 1 are identified as relationships.
 
 Version 1 exports class names, stereotypes and relationships related to classes. 
 
-On https://sketchboard.me create
-
 ![Sample Sketch Class Diagram](img/sample-sketch.png)
 
 ```json
