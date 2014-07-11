@@ -10,6 +10,19 @@ Class Diagram JSON
 
 Create Class Diagram on https://sketchboard.me. Diagram elements are identified as classes if class icon is used on Sketchboard.io.
 
+Methods and attributes are defined in section after stereotype and class name. Methods are distinguished from attributes if value contains parenthesis according to UML method declaration. Section order doesn't matter for attributes and methods as long as those are after stereotype and class name.
+
+Class syntax:
+```
+StakeHolder
+--
+firstName: String
+lastName: String
+role: Int
+--
+fullName(): String
+```
+
 #### Class element from UI Context menu
 ![Class Element from UI Context Menu](img/class-icon.png)
 
