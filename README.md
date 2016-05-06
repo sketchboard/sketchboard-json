@@ -42,22 +42,36 @@ Version 1 exports class names, stereotypes and relationships related to classes.
 
 ```json
 [{
-  "name":"StakeHolder",
-  "methods":["fullName(): String"],
-  "attributes":["firstName: String","lastName: String","role: Int"],
-  "relationships":["Project","Feature","Requirement"]
-},{
-  "name":"Project",
-  "attributes":["name"],
-  "relationships":["Feature"]
-},{
-  "name":"Feature",
-  "stereotype":"interface",
-  "relationships":["Requirement"]
+  "name":"FeatureImpl",
+  "relationships":[{
+    "name":"Feature",
+    "type":"-|>"
+  }]
 },{
   "name":"Requirement"
 },{
-  "name":"FeatureImpl",
-  "relationships":["Feature"]
+  "name":"Project",
+  "relationships":[{
+    "name":"Feature",
+    "type":"->"
+  }]
+},{
+  "name":"StakeHolder",
+  "methods":["fullName(): String"],
+  "attributes":["firstName: String","lastName: String","role: Int"],
+  "relationships":[{
+    "name":"Requirement",
+    "type":"->"
+  },{
+    "name":"Project",
+    "type":"->"
+  }]
+},{
+  "name":"Feature",
+  "stereotype":"interface",
+  "relationships":[{
+    "name":"Requirement",
+    "type":"->"
+  }]
 }]
 ```
