@@ -45,19 +45,36 @@ Version 1 exports class names, stereotypes and relationships related to classes.
   "name":"StakeHolder",
   "methods":["fullName(): String"],
   "attributes":["firstName: String","lastName: String","role: Int"],
-  "relationships":["Project","Feature","Requirement"]
+  "relationships":[{
+    "name":"Project",
+    "type":"->"
+  },{
+    "name":"Requirement",
+    "type":"->"
+  },{
+    "name":"Feature",
+    "type":"->"
+  }]
 },{
-  "name":"Project",
-  "attributes":["name"],
-  "relationships":["Feature"]
-},{
-  "name":"Feature",
-  "stereotype":"interface",
-  "relationships":["Requirement"]
+  "name":"FeatureImpl",
+  "relationships":[{
+    "name":"Feature",
+    "type":"-|>"
+  }]
 },{
   "name":"Requirement"
 },{
-  "name":"FeatureImpl",
-  "relationships":["Feature"]
+  "name":"Feature",
+  "stereotype":"interface",
+  "relationships":[{
+    "name":"Requirement",
+    "type":"->"
+  }]
+},{
+  "name":"Project",
+  "relationships":[{
+    "name":"Feature",
+    "type":"->"
+  }]
 }]
 ```
