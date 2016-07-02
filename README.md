@@ -85,12 +85,17 @@ CSV export (experimental)
 On a premium plan board content or selection can be exported as CSV.
 Nodes are listed hierarchically. Connections have direction with parent and child relations.
 
+CSV Export is found under the menu. You can [select shapes](https://m.sketchboard.io/long-press-starts-lasso-selection-189444a9684c) before export and only those are included in the output.
+
+![Menu export CSV](img/menu-export-csv.png)
+
 Two first columns define all nodes.
 
 - **ID** is the node unique identifier in the board.
 - **Value** is a text value of the node
 
 Child nodes of a parent are listed right after the parent node.
+
 - **Connection Type** defines type of the connection
 - **Child ID** is the child unique identifier
 - **Child Value** is the child text value
